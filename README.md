@@ -1,9 +1,8 @@
 # knn-fcm-bayesian-for-RS
 Some basic ML python code in RS
-These codes are for remote sensing and machine learning beginers to understand how
- to implement ML algorithms in python.
-To understand these codes you need to have basic knowledge of ML, RS science, python,
- numpy and matplotlib.
+
+These codes are for remote sensing and machine learning beginers to understand how to implement ML algorithms in python.
+To understand these codes you need to have basic knowledge of ML, RS science, python, numpy and matplotlib.
 
 knn classification:
     inputs: 1- Satellite image of size d*r*c (d is the number of sat image bands)
