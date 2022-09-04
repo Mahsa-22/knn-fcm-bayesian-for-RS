@@ -1,33 +1,37 @@
-# knn-fcm-bayesian-for-RS
-Some basic ML python code in RS
+These codes are for remote sensing and machine learning beginners to understand how to implement ML algorithms in python. To understand these codes you need to have basic knowledge of ML, RS science, python, numpy and matplotlib.
 
-These codes are for remote sensing and machine learning beginers to understand how to implement ML algorithms in python.
-To understand these codes you need to have basic knowledge of ML, RS science, python, numpy and matplotlib.
+------------
+**knn classification:**
+- Inputs:
+   1. Satellite image of size d*r*c (d is the number of sat image bands)
+   1. Train image of size r*c (some pixels are labeled and the rest are zero)
+   1. Test image of size r*c (some pixels are labeled and the rest are zero)
+   (Labels are obtained from the visual interpretation of the sat image)
+   1. Range of k numbers
+- Output:
+   1. Best k for classification and overall accuracies and a plot of classified image
 
-knn classification:
-    inputs: 1- Satellite image of size d*r*c (d is the number of sat image bands)
-            2- Train image of size r*c (some pixels are labled and the rest are zero)
-            3- Test image of size r*c (some pixels are labled and the rest are zero)
-               (Labels are obtained from the visual interpretation of the sat image)
-            4- Range of k numbers
-    output: finding best k for classification and overal accuracies
-            a plot of classified image
+------------
+**Procedural FCM:**
+- Inputs:
+   1. Satellite image of size d*r*c (d is the number of sat image bands)
+   1. Some initial values: (cl: number of clusters, q: fuzzifier, lmax: max number of iterations)
+- Output:
+   1. Clustered image and its plot with title and legend
 
-Procedural fcm:
-    inputs: 1- satellite image of size d*r*c (d is the number of sat image bands)
-            2- some initial values: (cl: number of clusters, q: fuzzifier, lmax: max
-               number of iterations)
-    output: a plot of clustered image with title and legend
+------------
+**Object based FCM:**
+- Inputs:
+   1. Satellite image of size d*r*c (d is the number of sat image bands)
+   1. Some initial values: (cl: number of clusters, q: fuzzifier, lmax: max
+number of iterations)
+- Output:
+   1. Clustered image and its plot
 
-Object based fcm:
-    inputs: 1- satellite image of size d*r*c (d is the number of sat image bands)
-            2- some initial values: (cl: number of clusters, q: fuzzifier, lmax: max
-               number of iterations)
-    output: a plot of clustered image
-
-Bayesian classification:
-    inputs: 1- Satellite image of size d*r*c (d is the number of sat image bands)
-            2- Target image of size r*c (some pixels are labled and the rest are zero)
-               (Labels are obtained from the visual interpretation of the sat image)
-    output: Overal accuracy and class accuracies
-            and plot of train and test label images and classified image
+------------
+**Bayesian classification:**
+- Inputs:
+   1. Satellite image of size d*r*c (d is the number of sat image bands)
+   1. Target image of size r*c (some pixels are labeled and the rest are zero) (Labels are obtained from the visual interpretation of the sat image)
+- Output:
+   1. Overall accuracy and class accuracies and plots of train and test label images and classified image
